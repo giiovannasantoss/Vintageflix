@@ -1,0 +1,40 @@
+header{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0,30,156);
+    justify-content: space-around;
+}
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgb(0, 30, 156);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+}
+article{
+    background-color: #4281c9;
+    border-radius: 10px;
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#logo{
+    margin-left: 5px;
+    width: 300px;
+    height:110px;
+    object-fit: cover;
+}
+ul{
+    display: flex;
+}
+h1 {
+    text-align: center;
+    color: #5799E4;
+}
+footer{
+    padding: 20px;
+    margin-top: 40px;
+    max-width: 100%;
+    text-align: center;
+}

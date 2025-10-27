@@ -1,0 +1,49 @@
+body{
+    background-color: #1A1A1A;
+    color: white;
+    font-family: Arial;
+    margin-left: 50px;
+}
+.imagem1, .imagem2, .imagem3{
+    height: 300px;
+    object-fit: cover;
+}
+.imagem1{
+    margin-left: 20px;
+    width: 300px;
+    border-top-right-radius: 20px;
+}
+.imagem2{
+    margin-left: 30px;
+    width: 600px;
+    border-radius: 30px;
+}
+.imagem3{
+    margin-left: 30px;
+    width: 400px;
+    border-top-left-radius: 20px;
+}
+img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.titulo, .subtitulo{
+    font-size: x-large;
+}
+.resenha, .nota{
+    background-color: rgb(0,30,156);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: large;
+    margin-right: 50px;
+}
+.nota{
+    text-align: center;
+    width: 60px;
+}
+footer{
+    padding: 20px;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
