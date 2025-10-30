@@ -6,6 +6,11 @@ body {
     color: black;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 button {
     font-family: "Cartoro";
     background-color: #C0A07A;
@@ -24,6 +29,34 @@ button {
     font-style: italic;
     font-weight: 100;
     font-size: 23px;
+}
+
+/* Estilização do header */
+header {
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    border-bottom: 2px solid #C0A07A;
+}
+
+#logo {
+    height: 80px;
+}
+
+#links-header {
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    margin: 0 auto;
+}
+
+#links-header li {
+    display: inline-block;
 }
 
 /* Estilização do footer */
@@ -91,9 +124,4 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 5px;
-    }
-
-    .links-content a {
-        text-decoration: none;
-        color: black;
     }
