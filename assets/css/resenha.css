@@ -1,49 +1,206 @@
-body{
-    background-color: #1A1A1A;
-    color: white;
-    font-family: Arial;
-    margin-left: 50px;
+body {
+    font-family: "Castoro";
+    margin: 0;
+    padding: 0;
+    background-color: #FFFBF0;
+    color: black;
 }
-.imagem1, .imagem2, .imagem3{
-    height: 300px;
-    object-fit: cover;
+
+a {
+    text-decoration: none;
+    color: black;
 }
-.imagem1{
-    margin-left: 20px;
-    width: 300px;
-    border-top-right-radius: 20px;
+
+h1, h2, h3 {
+    font-weight: 100;    
 }
-.imagem2{
-    margin-left: 30px;
-    width: 600px;
-    border-radius: 30px;
-}
-.imagem3{
-    margin-left: 30px;
-    width: 400px;
-    border-top-left-radius: 20px;
-}
-img{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.titulo, .subtitulo{
-    font-size: x-large;
-}
-.resenha, .nota{
-    background-color: rgb(0,30,156);
+
+button {
+    font-family: "Cartoro";
+    background-color: #C0A07A;
+    color: #FFFBF0;
     border-radius: 20px;
-    padding: 20px;
-    font-size: large;
-    margin-right: 50px;
+    border: none;
+    padding: 7px;
 }
-.nota{
-    text-align: center;
-    width: 60px;
+
+.italic-text {
+    font-style: italic;
 }
-footer{
-    padding: 20px;
-    margin-top: 40px;
+
+
+
+/* Estilização do header */
+header {
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+}
+
+#logo {
+    height: 80px;
+}
+
+#links-header {
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    margin: 0 auto;
+}
+
+#links-header li {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+
+/* Estilização da main */
+#img-capa {
     width: 100%;
-    text-align: center;
 }
+
+#resenha {
+    display: grid;
+    grid-template-areas: 
+    "img1 content content content"
+    "rating assistir classificações img-protagonista";
+    grid-template-columns: 31% 23% 23% 23%;
+    grid-template-rows: 50% 50%;
+    margin-top: 20px
+}
+
+#img-tv {
+    grid-area: img1;
+    justify-self: center;
+    align-self: center;
+    width: 90%
+}
+
+#content {
+    grid-area: content;
+}
+
+#content p {
+    text-align: justify;
+    justify-self: center;
+    width: 90%;
+    font-size: 1.4rem;
+}
+
+#rating h2, #assistir h2, #classificacoes h2 {
+    font-style: italic;
+}
+
+#genero {
+    display: inline-flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+#genero li {
+    border: 4px solid #C2A47E;
+    border-radius: 10px;
+    width: 110px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#rating {
+    grid-area: rating;
+    justify-self: center;
+}
+
+#assistir {
+    grid-area: assistir;
+    justify-self: center;
+}
+
+#classificacoes {
+    grid-area: classificações;
+    justify-self: center;
+}
+
+#img-protagonista {
+    grid-area: img-protagonista;
+    justify-self: center;
+    margin-top: -90px;
+    
+}
+
+
+/* Estilização do footer */
+footer {
+    background: linear-gradient(to bottom, #FFFBF0, #DBBF9C);
+}
+
+#div-footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+    gap: 12%;
+}
+
+.footer-title {
+    color: #C0A07A;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 23px;
+}
+
+.footer-column {
+    width: 200px;
+}
+
+    /* Contato */
+    #contato p {
+        font-style: italic;
+    }
+
+    #contact-button {
+        white-space: nowrap;
+    }
+
+    /* Newsletter */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input {
+        font-family: "Cartoro";
+        border-color: 20px solid #DBBF9C;
+        padding: 7px;
+    }
+
+    #newsletter-button {
+        margin-inline: auto;
+        width: 100px;
+    }
+
+    /* Citação */
+    .quote-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    q {
+        font-style: italic;
+    }
+
+    cite {
+        font-style: normal;
+    }
+
+    /* Links Rápidos */
+    .links-content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
