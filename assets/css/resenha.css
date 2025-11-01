@@ -92,7 +92,7 @@ header nav {
     #genero li {
         border: 4px solid #C2A47E;
         border-radius: 10px;
-        width: 110px;
+        padding-inline: 3%;
         text-align: center;
         font-size: 1.2rem;
     }
