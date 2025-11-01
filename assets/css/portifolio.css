@@ -1,0 +1,136 @@
+body {
+    font-family: "Castoro";
+    margin: 0;
+    padding: 0;
+    background-color: #FFFBF0;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3 {
+    font-weight: 100;    
+}
+
+button {
+    font-family: "Cartoro";
+    background-color: #C0A07A;
+    color: #FFFBF0;
+    border-radius: 20px;
+    border: none;
+    padding: 7px;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+
+
+/* Estilização do header */
+header {
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+}
+
+#logo {
+    height: 80px;
+}
+
+#links-header {
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    margin: 0 auto;
+}
+
+#links-header li {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+
+/* Estilização da main */
+
+
+
+/* Estilização do footer */
+footer {
+    background: linear-gradient(to bottom, #FFFBF0, #DBBF9C);
+}
+
+#div-footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+    gap: 12%;
+}
+
+.footer-title {
+    color: #C0A07A;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.footer-column {
+    width: 200px;
+}
+
+    /* Contato */
+    #contato p {
+        font-style: italic;
+    }
+
+    #contact-button {
+        white-space: nowrap;
+    }
+
+    /* Newsletter */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input {
+        font-family: "Cartoro";
+        border: 3px solid #DBBF9C;
+        border-radius: 20px;
+        padding: 7px;
+    }
+
+    #newsletter-button {
+        margin-inline: auto;
+        width: 100px;
+    }
+
+    /* Citação */
+    .quote-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    q {
+        font-style: italic;
+    }
+
+    cite {
+        font-style: normal;
+    }
+
+    /* Links Rápidos */
+    .links-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }

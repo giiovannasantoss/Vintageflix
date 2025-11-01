@@ -104,7 +104,7 @@ header nav {
     #content2 {
         display: grid;
         grid-template-areas: 
-        "rating assistir classificacoes img-protagonista";
+        "rating assistir classificacoes img-personagem";
         /* ajustar o gap */
     }
 
@@ -132,8 +132,8 @@ header nav {
         grid-area: classificacoes;
     }
 
-    #img-protagonista {
-        grid-area: img-protagonista;
+    #img-personagem {
+        grid-area: img-personagem;
         margin-top: -55px;
         justify-self: right;
         padding-right: 40px;
