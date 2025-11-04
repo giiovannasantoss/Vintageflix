@@ -59,6 +59,97 @@ header nav {
     display: inline-block;
 }
 
+
+/* Estilização - hero */
+
+#hero {
+    line-height: 0; /* elimina o espaçamento causado pela linha de texto */
+}
+
+#rolo-filmes {
+    display: block; /* impede o comportamento inline */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: -10%;
+}
+
+#frase-hero{
+    margin-top: -20%;
+    margin-left: 4%;
+    margin-bottom: 15% ;
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo-hero{
+    font-weight: 100;
+    font-size:4rem; 
+}
+
+/* Estilização - Mais vistos e Recomendados */
+.filmes{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.titulo-section{
+  font-size: 2rem;    
+  font-weight: 100;  
+}
+
+.grid-filmes{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.imagem-filme{
+    width: 245px;
+}
+
+.info-filme{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    width: 250px;
+}
+
+.rating-filme{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin-top: -5%;
+    color: #C0A07A;
+}
+.links-filme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.saiba-mais{
+    background-color: #C2A47E;
+    color: #FFFBF0;
+    padding: 4%;
+    width: 40%;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.ver-trailer{
+    margin-top: 3%;
+    font-size: 0.85rem;
+    text-decoration: underline;
+}
+
+#recomendados{
+    margin-bottom: 15%;
+}
+
+#mais-vistos{
+    margin-bottom: 10%;
+}
+
+
 /* Estilização do footer */
 footer {
     background: linear-gradient(to bottom, #FFFBF0, #DBBF9C);
