@@ -10,13 +10,19 @@
 <body>
     <header>
         <img id="logo" src="./assets/img/logo-germinaflix.svg" alt="Logo Germinaflix">
-        <nav>
+        <input type="checkbox" id="menu-hamburguer"/>
+        <label for="menu-hamburguer" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
             <ul id="links-header">
                 <li>
-                    <a href="#">Mais <span class="italic-text">vistos</span></a>
+                    <a href="#mais-vistos">Mais <span class="italic-text">vistos</span></a>
                 </li>
                 <li>
-                    <a href="#"><span class="italic-text">Recomendados</span></a>
+                    <a href="#recomendados"><span class="italic-text">Recomendados</span></a>
                 </li>
                 <li>
                     <a href="mariPortifolio.html">Sobre a <span class="italic-text">Mariana</span></a>
@@ -133,7 +139,7 @@
             <h3 class="italic-text titulo-section">Recomendados</h3>
             <div class="grid-filmes">
                 <div class="filme-card">
-                    <img src="./assets/img/monteCarlo.png" alt="Monte Carlo">
+                    <img class="imagem-filme" src="./assets/img/monteCarlo.png" alt="Monte Carlo">
                     <div class="info-filme">
                         <p class="italic-text">Monte Carlo</p>
                         <p>2011</p>
@@ -151,7 +157,7 @@
                 </div>
                 
                 <div class="filme-card">
-                    <img src="./assets/img/sorrisoReal.png" alt="Sorriso Real">
+                    <img class="imagem-filme" src="./assets/img/sorrisoReal.png" alt="Sorriso Real">
                     <div class="info-filme">
                         <p class="italic-text">Sorriso Real</p>
                         <p>2023</p>
@@ -169,7 +175,7 @@
                 </div>
 
                 <div class="filme-card">
-                    <img src="./assets/img/sempreAoSeuLado.png" alt="Até o Último Homem">
+                    <img class="imagem-filme" src="./assets/img/sempreAoSeuLado.png" alt="Até o Último Homem">
                     <div class="info-filme">
                         <p class="italic-text">Sempre ao seu lado</p>
                         <p>2016</p>
@@ -187,7 +193,7 @@
                 </div>
 
                 <div class="filme-card">
-                    <img src="./assets/img/queridoJohn.png" alt="Querido John">
+                    <img class="imagem-filme" src="./assets/img/queridoJohn.png" alt="Querido John">
                     <div class="info-filme">
                         <p class="italic-text">Querido John</p>
                         <p>2010</p>
@@ -206,7 +212,7 @@
                 </div>
 
                 <div class="filme-card">
-                    <img src="./assets/img/gilmoreGirls.png" alt="Gilmore Girls">
+                    <img class="imagem-filme" src="./assets/img/gilmoreGirls.png" alt="Gilmore Girls">
                     <div class="info-filme">
                         <p class="italic-text">Gilmore Girls</p>
                         <p>2000</p>
@@ -228,7 +234,6 @@
 
     <footer>
         <div id="div-footer">
-
             <div id="contato" class="footer-column">
                 <h3 class="footer-title">Contato</h3>
                 <p>
