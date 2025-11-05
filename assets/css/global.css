@@ -1,0 +1,233 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Castoro";
+    margin: 0%;
+    padding: 0%;
+    background-color: #FFFBF0;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    font-family: "Cartoro";
+    background-color: #C0A07A;
+    color: #FFFBF0;
+    border-radius: 20px;
+    border: none;
+    padding: 7px;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.footer-title {
+    color: #C0A07A;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 23px;
+}
+
+/* Estilização do header */
+header {
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    border-bottom: 2px solid #C0A07A;
+}
+
+#logo {
+    height: 80px;
+}
+
+#menu-hamburguer{
+    display: none;
+}
+
+.menu-btn{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.menu-btn span{
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color:black;
+}
+
+#links-header {
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    margin: 0 auto;
+}
+
+#links-header li {
+    display: inline-block;
+}
+
+
+/* Estilização do footer */
+footer {
+    background: linear-gradient(to bottom, #FFFBF0, #DBBF9C);
+}
+
+#div-footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+    gap: 12%;
+}
+
+.footer-column {
+    width: 200px;
+}
+
+/* Contato */
+#contato p {
+     font-style: italic;
+}
+
+#contact-button {
+    white-space: nowrap;
+}
+
+/* Newsletter */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    font-family: "Cartoro";
+    border-color: #DBBF9C;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 7px;
+}
+
+#newsletter-button {
+    margin-inline: auto;
+    width: 100px;
+}
+
+/* Citação */
+.quote-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+q {
+    font-style: italic;
+}
+
+cite {
+    font-style: normal;
+}
+
+/* Links Rápidos */
+.links-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    gap: 5px;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    #links-header {
+        gap:40px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    .menu-btn{
+        display: flex;
+        position: absolute;
+        right: 8%;
+        cursor: pointer;
+    }
+
+    .menu {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        background-color: #FFFBF0;
+        border-top: 2px solid #C0A07A;
+        border-bottom: 2px solid #C0A07A;
+        padding: 40px;
+        align-items: center;
+    }
+        
+    #menu-hamburguer:checked ~ .menu {
+        display: flex;
+    }
+        
+    #menu-hamburguer:checked + .menu-btn span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 7px);
+    }
+        
+    #menu-hamburguer:checked + .menu-btn span:nth-child(2) {
+        opacity: 0;
+    }
+        
+    #menu-hamburguer:checked + .menu-btn span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    #links-header{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+        gap: 20px;
+        font-size: 0.9rem;
+    }
+
+    #div-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .links-content {
+        align-items: left;
+        text-align: left;
+        gap: 5px;
+    }
+}
