@@ -63,7 +63,7 @@ h1, h2, h3 {
     }
 
     #rating-img {
-        height: 20%;
+        height: 17%;
     }
 
     #assistir {
@@ -72,8 +72,27 @@ h1, h2, h3 {
         justify-self: center;
     }
 
+    #assistir h2 {
+        justify-self: center;
+    }
+
     #classificacoes {
         grid-area: classificacoes;
+        display: flexbox;
+        justify-self: center;
+    }
+
+    .imgs-logos {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .imgs-logos p {
+        text-align: center;
+        margin-top: 5px;
     }
 
     #img-personagem {
