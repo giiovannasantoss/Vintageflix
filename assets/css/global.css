@@ -28,20 +28,13 @@ button {
     font-style: italic;
 }
 
-.footer-title {
-    color: #C0A07A;
-    font-style: italic;
-    font-weight: 100;
-    font-size: 23px;
-}
-
-
 /* Estilização do header */
 header {
     display: flex;
     align-items: center;
     padding-inline: 20px;
     border-bottom: 2px solid #C0A07A;
+    z-index: 2;
 }
 
 #logo {
@@ -76,6 +69,16 @@ header {
     padding: 0;
 }
 
+#links-header a:hover{
+    color: #A8855E;
+}
+
+#links-header a{
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+}
+
 header nav {
     margin: 0 auto;
 }
@@ -88,6 +91,13 @@ header nav {
 /* Estilização do footer */
 footer {
     background: linear-gradient(to bottom, #FFFBF0, #DBBF9C);
+}
+
+.footer-title {
+    color: #C0A07A;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 23px;
 }
 
 #div-footer {
@@ -130,6 +140,10 @@ input {
     width: 100px;
 }
 
+#newsletter-button:hover, #contact-button:hover {
+    background-color: #A8855E;
+}
+
 /* Citação */
 .quote-content{
     display: flex;
@@ -154,6 +168,14 @@ cite {
     gap: 5px;
 }
 
+.links-content a:hover {
+    color: #A8855E;
+
+}
+
+#links-header a, #newsletter-button, #contact-button, .links-content a {
+    transition:all 0.4s ease;
+}
 
 /* Tablets */
 @media (max-width: 1024px) {
