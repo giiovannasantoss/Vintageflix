@@ -43,10 +43,6 @@ header {
     border-bottom: 2px solid #C0A07A;
 }
 
-#logo {
-    height: 80px;
-}
-
 #menu-hamburguer{
     display: none;
 }
@@ -70,6 +66,7 @@ header {
 #links-header {
     list-style-type: none;
     display: flex;
+    align-items: center;
     gap: 80px;
     margin: 0;
     padding: 0;
@@ -163,6 +160,11 @@ header nav {
     width: 40%;
     border-radius: 1rem;
     text-align: center;
+    transition: 0.4s;
+}
+
+.saiba-mais:hover{
+    background-color: #A8855E;
 }
 
 .ver-trailer{
