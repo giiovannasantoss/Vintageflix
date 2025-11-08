@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Castoro:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/resenha.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
     <title>Saiba Mais - Diário de Uma Paixão</title>
 </head>
 <body>
     
     <header>
-        <img id="logo" src="../assets/img/logo-germinaflix.svg" alt="Logo Germinaflix">
-        <nav>
+        <img id="logo" src="../assets/img/logo-Vintageflix.svg" alt="Logo Vintageflix">
+        <input type="checkbox" id="menu-hamburguer"/>
+        <label for="menu-hamburguer" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
             <ul id="links-header">
                 <li>
-                    <a href="#">Mais <span class="italic-text">vistos</span></a>
+                    <a href="#mais-vistos">Mais <span class="italic-text">vistos</span></a>
                 </li>
                 <li>
-                    <a href="#"><span class="italic-text">Recomendados</span></a>
+                    <a href="#recomendados"><span class="italic-text">Recomendados</span></a>
                 </li>
                 <li>
-                    <a href="giovanna.html" target="_blank">Sobre a <span class="italic-text">Giovanna</span></a>
+                    <a href="mariPortifolio.html">Sobre a <span class="italic-text">Mariana</span></a>
                 </li>
                 <li>
-                    <a href="mariana.html" target="_blank">Sobre a <span class="italic-text">Mariana</span></a>
+                    <a href="#">Sobre a <span class="italic-text">Giovanna</span></a>
                 </li>
             </ul>
         </nav>
@@ -66,14 +73,25 @@
 
                 <div id="assistir">
                     <h2>Onde assistir?</h2>
-                    
-                    <!-- adicionar lugares -->
+                    <ul class="imgs-logos">
+                        <li><img src="../assets/img/logo-Hbo-Max.svg"></li>
+                        <li><img src="../assets/img/logo-Prime-Video.svg"></li>
+                        <li><img src="../assets/img/logo-Apple-Tv.svg"></li>
+                    </ul>
                 </div>
 
                 <div id="classificacoes">
                     <h2>Classificações</h2>
-                    
-                    <!-- adicionar lugares -->
+                    <ul class="imgs-logos">
+                        <li>
+                            <img src="../assets/img/logo-Adoro-Cinema.svg">
+                            <p>4,6/5</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/logo-imdb.svg">
+                            <p>7,8/10</p>
+                        </li>
+                    </ul>
                 </div>
 
                 <img id="img-personagem" src="../assets/img/personagem-Diario-de-Uma-Paixao.png">
@@ -98,9 +116,8 @@
 
     <footer>
         <div id="div-footer">
-
             <div id="contato" class="footer-column">
-                <h2 class="footer-title">Contato</h2>
+                <h3 class="footer-title">Contato</h3>
                 <p>
                     Tel +55 1194128-6166
                     <br>
@@ -110,7 +127,7 @@
             </div>
             
             <div class="footer-column">
-                <h2 class="footer-title">Newsletter</h2>
+                <h3 class="footer-title">Newsletter</h3>
                 <p>Fique por dentro de todas as novidades do cinema.</p>
                 <form>
                     <input type="text" placeholder="Digite seu nome">
@@ -120,7 +137,7 @@
             </div>
             
             <div id="quote" class="footer-column">
-                <h2 class="footer-title">Citação</h2>
+                <h3 class="footer-title">Citação</h3>
                 <div class="quote-content">
                     <q>
                         A vida é como uma caixa de chocolates. Você nunca sabe o que vai encontrar.
@@ -130,9 +147,9 @@
             </div>
 
             <div class="footer-column">
-                <h2 class="footer-title">Links Rápidos</h2>
+                <h3 class="footer-title">Links Rápidos</h3>
                 <div>
-                    <ul class="links-footer">
+                    <ul class="links-content">
                         <li>
                             <a href="#">Mais <span class="italic-text">vistos</span></a>
                         </li>
@@ -140,10 +157,10 @@
                             <a href="#">Recomendados</a>
                         </li>
                         <li>
-                            <a href="giovanna.html" target="_blank">Sobre a <span class="italic-text">Giovanna</span></a>
+                            <a href="#">Sobre a <span class="italic-text">Giovanna</span></a>
                         </li>
                         <li>
-                            <a href="mariana.html" target="_blank">Sobre a <span class="italic-text">Mariana</span></a>
+                            <a href="#">Sobre a <span class="italic-text">Mariana</span></a>
                         </li>
                     </ul>
                 </div>
