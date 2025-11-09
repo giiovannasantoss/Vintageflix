@@ -1,40 +1,329 @@
-header{
-    margin-bottom: 40px;
+@import url('https://fonts.googleapis.com/css?family=Castoro');
+#hero{
+    text-align: center;
+    font-size: 5rem;
+}
+
+#estrelas{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    width: 8%;
+}
+#mari{
+    margin-left: -20%;
+}
+
+#portfolio{
+    margin-top: -8%;
+    margin-left: 5%;
+}
+
+#coracoes{
+    position: absolute;
+    right: 31%;
+    top: 40%;
+    width: 8%;
+}
+
+#sobre-mim{
     display: flex;
-    justify-content: space-between;
-    background-color: rgb(0,30,156);
-    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
 }
-main {
-    max-width: 800px;
-    margin: 50px auto;
-    background-color: rgb(0, 30, 156);
-    padding: 30px;
-    border-radius: 15px;
-    color: white;
+
+#sobre-mim-titulo{
+    font-size: 2rem;
 }
-article{
-    background-color: #4281c9;
+
+#texto{
+    margin-right: 10%;
+}
+#curiosidades-section,#lugares-que-conheci-section, #proximos-destinos-section {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.titulo-section {
+    font-size: 3rem;
+    margin-top: 10%;
+}
+.descricao-section {
+    margin-top: -3%;
+    font-size: 1.2rem;
+    color: #a48463;
+}
+
+#curiosidades {
+    display: flex;
+    overflow-x: auto;
+    gap: 6%;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #c0a07a transparent;
+    align-items: flex-start;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+}
+
+#curiosidades::-webkit-scrollbar {
+    height: 6px;
+}
+#curiosidades::-webkit-scrollbar-track {
+    background: transparent;
+}
+#curiosidades::-webkit-scrollbar-thumb {
+    background-color: #c0a07a;
     border-radius: 10px;
-    padding: 20px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#logo{
-    margin-left: 5px;
-    width: 300px;
-    height:110px;
-    object-fit: cover;
+#curiosidades::-webkit-scrollbar-thumb:hover {
+    background-color: #a48463;
 }
-ul{
+
+.card-curiosidade {
+    width: 18%;
+    aspect-ratio: 1 / 1.2; 
+    min-width: 12rem;
+    perspective: 1000px;
+    scroll-snap-align: center;
+    background: transparent;
+}
+
+.card-interno {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s ease;
+    transform-style: preserve-3d;
+}
+
+.card-curiosidade:hover .card-interno {
+    transform: rotateY(180deg);
+}
+
+.card-frente,
+.card-verso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
 }
-h1 {
+
+.card-frente {
+    background-color: #fdfaf3;
+    border: 0.15rem solid #c0a07a;
+    color: #a48463;
+}
+
+.card-frente h1 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.card-frente img {
+    width: 60%;
+    height: auto;
+    max-height: 8rem;
+    object-fit: contain;
+}
+
+.card-verso {
+    background-color: #fff6e7;
+    border: 0.15rem solid #c0a07a;
+    transform: rotateY(180deg);
+    color: #4b3a2f;
+    font-size: 1rem;
     text-align: center;
-    color: #5799E4;
+    padding: 1rem;
 }
-footer{
-    padding: 20px;
-    margin-top: 40px;
-    max-width: 100%;
-    text-align: center;
+
+.card-verso p {
+    margin-top: 50%;
 }
+
+#biblia, #bolo, #numero-de-pi, #dicionario, #diario{
+    margin-top: 20%;
+    width:90%;
+}
+
+#proximos-destinos, #lugares-que-conheci{
+    margin-top: 5%;
+    overflow-x: auto;
+    display: flex;
+    gap: 5%;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #c0a07a transparent;
+    margin-bottom: 10%;
+}
+
+.lugar, .destino{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lugar-imagem{
+    width: 250px;
+    border: 1rem solid #EFE5D3;
+    border-bottom-width: 5rem;
+}
+
+.flor-com-fita{
+    width: 100px;
+    margin-top: -50%;
+    margin-left: 70%;
+}
+
+.nome-lugar{
+    margin-top: -20%;
+    font-size: 1.3rem;
+}
+
+
+.lugar:hover, .destino:hover{
+    opacity: 0.8;
+}
+
+.pais-imagem{
+    border: 1rem solid #c0a07a;
+}
+
+.papel{
+    margin-top: -10%;
+    width: 75%;
+}
+
+.nome-pais{
+    margin-top: -32%;
+    font-size: 2.2rem;
+}
+
+#proximos-destinos::-webkit-scrollbar, #lugares-que-conheci::-webkit-scrollbar {
+    height: 10px;
+}
+#proximos-destinos::-webkit-scrollbar-track, #lugares-que-conheci::-webkit-scrollbar-track {
+    background: transparent;
+}
+#proximos-destinos::-webkit-scrollbar-thumb,  #lugares-que-conheci::-webkit-scrollbar-thumb {
+    background-color: #c0a07a;
+    border-radius: 10px;
+}
+#proximos-destinos::-webkit-scrollbar-thumb:hover,  #lugares-que-conheci::-webkit-scrollbar-thumb:hover {
+    background-color: #a48463;
+}
+
+
+@media (max-width: 1200px) {
+    #hero {
+      font-size: 4rem;
+    }
+    #estrelas, #coracoes {
+      width: 10%;
+    }
+    #sobre-mim {
+      flex-direction: column;
+      text-align: center;
+    }
+    #sobre-mim img {
+      width: 60%;
+    }
+    #texto {
+      margin: 5%;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    #hero {
+      font-size: 3rem;
+    }
+    #mari {
+      margin-left: 0;
+    }
+    #portfolio {
+      margin-top: 0;
+    }
+    #curiosidades {
+      gap: 4%;
+    }
+    .card-curiosidade {
+      width: 40%;
+      min-width: 10rem;
+    }
+    .titulo-section {
+      font-size: 2.5rem;
+    }
+    .descricao-section {
+      font-size: 1rem;
+    }
+    .lugar-imagem {
+      width: 200px;
+      border-width: 0.8rem;
+      border-bottom-width: 3rem;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    header nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    #hero {
+      font-size: 2.5rem;
+    }
+    #estrelas, #coracoes {
+      display: none;
+    }
+    #sobre-mim img {
+      width: 80%;
+    }
+    #sobre-mim-titulo {
+      font-size: 1.5rem;
+    }
+    .card-curiosidade {
+      width: 60%;
+    }
+    .nome-lugar {
+      font-size: 1rem;
+    }
+    .nome-pais {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #hero {
+      font-size: 2rem;
+    }
+    #portfolio {
+      margin-left: 0;
+    }
+    #curiosidades {
+      padding: 1rem;
+      gap: 2rem;
+    }
+    .card-curiosidade {
+      width: 80%;
+    }
+    .titulo-section {
+      font-size: 2rem;
+    }
+    .descricao-section {
+      font-size: 0.9rem;
+    }
+    footer {
+      font-size: 0.9rem;
+    }
+    footer input, footer button {
+      width: 100%;
+    }
+  }
+  
