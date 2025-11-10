@@ -126,3 +126,49 @@ h1, h2, h3 {
     #imgs img{
         width: 100%;
     } 
+
+    @media (max-width: 768px) {
+        #content{
+            flex-direction: column;
+        }
+
+        #img-tv{
+            width: 90%;
+        }
+
+        #content p, #content li{
+            font-size: 0.7rem;
+        }
+
+        #content2 {
+            display: grid;
+            grid-template-areas: 
+            "img-personagem"
+            "rating"
+            "assistir"
+            "classificacoes";
+        }
+
+
+        #content2 h2{
+            font-size: 1rem;
+        }
+
+        #img-personagem {
+            display: none;
+        }
+        
+        #imgs {
+            display: flex;           
+            overflow-x: auto;        
+            gap: 15px;               
+            padding: 10px;           
+            scroll-snap-type: x mandatory; 
+            scrollbar-width: none;
+        }
+    
+        #imgs img {
+            flex: 0 0 auto;          
+            scroll-snap-align: start; 
+        }
+    }
