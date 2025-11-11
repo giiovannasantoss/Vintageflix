@@ -133,7 +133,7 @@ h1, h2, h3 {
         }
 
         #img-tv{
-            width: 90%;
+            display: none;
         }
 
         #content p, #content li{
