@@ -30,11 +30,15 @@ button {
 
 /* Estilização do header */
 header {
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     padding-inline: 20px;
+    background-color: #FFFBF0;
+    width: 100%;
     border-bottom: 2px solid #C0A07A;
-    z-index: 2;
+    z-index: 1;
 }
 
 #logo {
@@ -194,7 +198,7 @@ cite {
     .menu-btn{
         display: flex;
         position: absolute;
-        right: 8%;
+        right: 15%;
         cursor: pointer;
     }
 
