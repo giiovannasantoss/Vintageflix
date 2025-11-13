@@ -125,7 +125,38 @@ h1, h2, h3 {
 
     #imgs img{
         width: 100%;
-    } 
+    }
+
+    .container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container img {
+        display: block;
+        object-fit: cover;
+        transition: 0.5s ease;
+    }
+
+    .frase {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        opacity: 0;
+        transition: 0.5s ease;
+        text-align: center;
+    }
+
+    .container:hover img {
+        filter: blur(3px) brightness(70%);
+        transform: scale(1.05);
+    }
+
+    .container:hover .frase {
+        opacity: 1;
+    }
 
     @media (max-width: 768px) {
         #content{
@@ -149,7 +180,6 @@ h1, h2, h3 {
             "classificacoes";
         }
 
-
         #content2 h2{
             font-size: 1rem;
         }
@@ -163,12 +193,10 @@ h1, h2, h3 {
             overflow-x: auto;        
             gap: 15px;               
             padding: 10px;           
-            scroll-snap-type: x mandatory; 
             scrollbar-width: none;
         }
-    
-        #imgs img {
-            flex: 0 0 auto;          
-            scroll-snap-align: start; 
+
+        .container {
+            flex: 0 0 80%;
         }
     }

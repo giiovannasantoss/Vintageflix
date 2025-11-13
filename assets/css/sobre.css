@@ -152,7 +152,15 @@
 
 #biblia, #bolo, #numero-de-pi, #dicionario, #diario{
     margin-top: 20%;
-    width:90%;
+    width: 90%;
+}
+
+#modelo, #presente{
+  width: 100%;
+}
+
+#barbie, #presente, #modelo {
+  margin-top: 10%
 }
 
 #proximos-destinos, #lugares-que-conheci{
@@ -173,7 +181,8 @@
 }
 
 .lugar-imagem{
-    width: 250px;
+    width: 270px;
+    height: 200px;
     border: 1rem solid #EFE5D3;
     border-bottom-width: 5rem;
 }
@@ -185,7 +194,7 @@
 }
 
 .nome-lugar{
-    margin-top: -20%;
+    margin-top: -10%;
     font-size: 1.3rem;
 }
 
@@ -195,6 +204,8 @@
 }
 
 .pais-imagem{
+    width: 270px;
+    height: 200px;
     border: 1rem solid #c0a07a;
 }
 
@@ -204,8 +215,8 @@
 }
 
 .nome-pais{
-    margin-top: -32%;
-    font-size: 2.2rem;
+    margin-top: -30%;
+    font-size: 1.8rem;
 }
 
 #proximos-destinos::-webkit-scrollbar, #lugares-que-conheci::-webkit-scrollbar {
