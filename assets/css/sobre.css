@@ -151,16 +151,21 @@
     margin-top: 50%;
 }
 
-#biblia, #bolo, #numero-de-pi, #dicionario, #diario{
+#biblia, #bolo, #numero-de-pi, #dicionario, #diario, #onda{
     margin-top: 20%;
     width: 90%;
 }
+
 
 #modelo, #presente, #azeitonas{
   width: 100%;
 }
 
-#barbie, #presente, #modelo, #azeitonas, #telescopio{
+#cubo{
+  width: 90%;
+}
+
+#barbie, #presente, #modelo, #azeitonas, #telescopio, #cubo{
   margin-top: 10%
 }
 
@@ -345,6 +350,10 @@
     }
     #texto {
       margin: 5%;
+    }
+
+    .nome-lugar{
+      margin-top: -22%;
     }
   }
   
